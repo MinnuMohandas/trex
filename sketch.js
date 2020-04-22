@@ -48,7 +48,7 @@ function draw() {
   background(180);
   
   score = score + Math.round(getFrameRate()/60);
-  text("Score: "+ score, 500,50);
+ // text("Score: "+ score, 500,50);
   
   if(keyDown("space")) {
     trex.velocityY = -10;
@@ -115,6 +115,6 @@ function spawnObstacles() {
     obstacle.scale = 0.5;
     obstacle.lifetime = 300;
     //add each obstacle to the group
-    obstacleGroup.add(obstacle);
+    obstaclesGroup.add(obstacle);
   }
 }
